@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wordcloud</title>
+    <!-- <script src="../第一次个人编程作业/echarts-wordcloud-master/dist/echarts-wordcloud.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js'></script> -->
+</head>
+<body>
+    <script>
+        var fso = new ActiveXObject(Scripting.FileSystemObject);
+        var f = fso.opentextfile('C:\Users\朱佳超\Desktop\学业\软件工程\第一次个人编程作业\words.txt',1,true);
+        while(!f.AtEndOfStream){
+            f.Readline();
+        }
+        f.close();
+    </script>
+</body>
+</html>
